@@ -1,0 +1,64 @@
+/* STYLESHEET MODIFICATIONS ----------------------------------------------------------------------------------------- */
+
+#footer{
+    text-align:right!important;
+}
+
+/* WRAPPERs/DIVs/CONTAINERs ----------------------------------------------------------------------------------------- */
+
+#teacher_wrapper{
+    padding:5px 15px;
+}
+
+/* SHORTCUTS -------------------------------------------------------------------------------------------------------- */
+
+#shortcuts{
+	overflow:hidden;
+    margin:5px 15px;
+    padding:0;
+}
+
+#shortcuts_header h4{    
+    color: white;
+    font-size:16px;
+    padding:10px 15px;
+    
+    margin:0;
+    background-color:#0B92D5;
+    box-shadow:0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+#shortcuts_header h4 img{
+    float:right;
+    margin-top:1px;
+    width:16px;
+}
+#shortcuts_header h4 img:hover{
+    cursor:pointer;
+}
+
+#shortcuts ul{
+    list-style:none;
+    padding:0px;
+}
+
+#shortcuts li{
+    margin:10px 0px;
+    
+    background:rgba(251,251,253,0.7);
+	border-bottom: 2px solid #C2C2C2;
+   
+   padding-top:5px;
+   padding-bottom:5px;
+}
+
+#shortcuts li a,
+#shortcuts li a:visited{
+    color:#777;
+    padding-left:15px;
+}
+#shortcuts li a:hover{
+    text-decoration:none;
+    color:#0CA4F0;
+}
+

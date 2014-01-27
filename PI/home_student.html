@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- TITLE -->
+		<title>GereTP's Personal Page</title>
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="source/img/favicon.png"/>
+
+<!-- CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!-- Bootstrap sb-admin -->
+	<link href="source/css/sb-admin/bootstrap.css" rel="stylesheet"/>
+	<link href="source/css/sb-admin/sb-admin.css" rel="stylesheet"/>
+
+	<!-- Personal stylesheet -->
+	<link href="source/css/stylesheet.css" rel="stylesheet"/>
+	<link href="source/css/sticky-footer.css" rel="stylesheet"/>
+	
+		
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	</head>	
+	<body>
+	
+		<!-- #main -->
+		<div id="main">
+			<!-- #wrapper -->
+			<div id="wrapper">
+
+				<!-- Navbar -->
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+	
+					<!-- .navbar-header -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="homepage.html"><img src="source/img/light_title.png"/></a>
+					</div> <!-- /.navbar-header -->
+	
+					<!-- .navbar-collapse -->
+					<div class="collapse navbar-collapse">
+						<!-- #navbar_menu -->
+						<ul class="nav navbar-nav navbar-right navbar-user" id="navbar_menu">
+
+<!-- NAVBAR MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+							
+	<!-- Explore Menu -->
+	<li><a href="search.html" onmouseover="lightImg('explore')" onmouseout="normalImg('explore')">
+		<img id="explore" src="source/img/icons/normal_icons/normal_explore.png" width="16" height="16"/> Explore</a>
+	</li>
+					
+	<!-- Alerts Menu -->
+	<li class="dropdown alerts-dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="lightImg('alert');lightText('alert_text');lightCaret('alert_caret')" onmouseout="normalImg('alert');normalText('alert_text');normalCaret('alert_caret')" id="alert_text"> <img id="alert" src="source/img/icons/normal_icons/normal_alert.png" width="16" height="16"/> Alerts <span class="badge">3</span> <b class="caret" id="alert_caret"></b></a>
+		<ul class="dropdown-menu" onmouseover="lightImg('alert');lightText('alert_text');lightCaret('alert_caret')" onmouseout="normalImg('alert');normalText('alert_text');normalCaret('alert_caret')" >
+			<li><a href="#">Default <span class="label label-default">Default</span></a></li>
+			<li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
+			<li><a href="#">Success <span class="label label-success">Success</span></a></li>
+			<li><a href="#">Info <span class="label label-info">Info</span></a></li>
+			<li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
+			<li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
+			<li class="divider"></li>
+			<li><a href="#">View All</a></li>
+		</ul>
+	</li>
+							
+	<!-- Student Menu -->
+	<li class="dropdown user-dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="lightImg('student');lightText('student_text');lightCaret('student_caret')" onmouseout="normalImg('student');normalText('student_text');normalCaret('student_caret')" id="student_text"> <img id="student" src="source/img/icons/normal_icons/normal_student.png" width="16" height="16"/> Student Name <b class="caret" id="student_caret"></b></a>
+		<ul class="dropdown-menu"  onmouseover="lightImg('student');lightText('student_text');lightCaret('student_caret')" onmouseout="normalImg('student');normalText('student_text');normalCaret('student_caret')">
+			<li><a href="#" onmouseover="lightImg('user')" onmouseout="normalImg('user')"><img src="source/img/icons/normal_icons/normal_user.png" id="user"/>Profile</a></li>
+			<li><a href="#" onmouseover="lightImg('task')" onmouseout="normalImg('task')"><img src="source/img/icons/normal_icons/normal_task.png" id="task"/>My Tasks</a></li>
+			<li><a href="#" onmouseover="lightImg('grade')" onmouseout="normalImg('grade')"><img src="source/img/icons/normal_icons/normal_grade.png" id="grade"/>My Grades</a></li>
+			<li><a href="#" onmouseover="lightImg('course')" onmouseout="normalImg('course')"><img src="source/img/icons/normal_icons/normal_course.png" id="course"/>Subscription Requests</a></li>
+			<li class="divider"></li>
+			<li><a href="#" class="red_button" id="log_out"><img src="source/img/icons/light_icons/light_logout.png" width="12"/>LOGOUT</a></li>
+		</ul>
+	</li>							
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						</ul><!-- /#navbar_menu -->
+							
+					</div><!-- /.navbar-collapse -->
+				</nav><!-- /Navbar -->
+			</div><!-- /#wrapper -->
+
+			<!-- #content -->
+			<div id="content">
+				
+				<!-- .user-banner -->
+				<div class="user-banner">
+				
+<!-- BANNER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<div class="container" id="source">
+					<a href="#"><img src="source/img/icons/light_icons/light_home.png" width="14"/>Home Page</a> > Página 1 > Página 2 > etc
+				</div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				
+				</div> <!-- /.user-banner -->
+				
+				<!-- #page-wrapper-->
+				<div id="page-wrapper">
+					
+					
+					<!-- #container -->
+					<div class="container user_container">
+
+<!-- PAGE CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<!-- Left Side ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->						
+	<div class="col-md-5">
+		
+		<!-- #agenda ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div id="agenda">
+
+			<ul id="tabs_agenda" class="nav nav-pills" data-tabs="tabs">
+				<li class="active"><a href="#schedule" data-toggle="tab">Schedule</a></li>
+				<li><a href="#calendar" data-toggle="tab">Calendar</a></li>
+			</ul>
+	
+			<div id="tabs_agenda_content" class="tab-content">
+			
+				<!-- #schedule -->
+				<div class="tab-pane active" id="schedule">
+					<h1>schedule</h1>
+					<p>schedule schedule schedule schedule schedule schedule</p>
+				</div>
+				
+				<!-- #calendar -->
+				<div class="tab-pane" id="calendar">
+					<h1>calendar</h1>
+					<p>calendar calendar calendar calendar calendar calendar</p>
+				</div>
+				
+			</div>		
+
+		
+		</div> <!-- /#agenda -->
+		
+		<!-- #block_groups ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="col-md-12 block" id="block_groups">
+		
+			<!-- #block_header -->		
+			<div class="col-md-12 block_header">
+				<div class="table_30">				
+					<!-- .block_icon -->
+					<div class="table_cell block_icon">
+						<img src="source/img/icons/light_icons/light_group.png" width="20"/>
+					</div>					
+					<!-- .block_title -->
+					<div class="table_cell block_title">
+						<a href="#">Groups </a>
+					</div>					
+				</div>
+			</div> <!-- /#block_header -->		
+
+			<!-- #block_body -->
+			<div class="col-md-12 block_body">
+				<ul id="list_groups">
+					<li><a href="#">[Project 1] Group 1</a> <span class="course">Course 1</span></li>
+					<li><a href="#">[Project 2] Group 2</a> <span class="course">Course 2</span></li>
+					<li><a href="#">[Project 3] Group 3</a> <span class="course">Course 3</span></li>
+					<li><a href="#">[Project N] Group N</a> <span class="course">Course N</span></li>
+				</ul>
+			</div> <!-- /#block_body -->
+			
+			<!-- #block_footer-->
+			<div class="col-md-12 block_footer">
+				<div class="block_view view_less">
+					<img src="source/img/icons/normal_icons/normal_minus.png" width="10"/>
+					<a href="#">view less</a>
+				</div>
+				<div class="block_view view_more">
+					<img src="source/img/icons/normal_icons/normal_plus.png" width="10"/>
+					<a href="#">view more</a>
+				</div>
+			</div> <!-- #block_footer-->	
+			
+		</div><!-- /#block_groups -->
+		
+	</div> <!-- /Left Side -->
+	
+	<!-- Right Side ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<div class="col-md-7">
+	
+		<!-- #block_anuncios ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="col-md-12 block" id="block_anuncios">
+		
+			<!-- #block_header -->
+			<div class="col-md-12 block_header">
+				<div class="table_30">				
+					<!-- .block_icon -->
+					<div class="table_cell block_icon">
+						<img src="source/img/icons/light_icons/light_anuncios.png" width="20"/>
+					</div>					
+					<!-- .block_title -->
+					<div class="table_cell block_title">
+						<a href="#">Announcements </a>
+					</div>					
+				</div>
+			</div> <!-- /#block_header -->
+			
+			<!-- #block_body -->
+			<div class="col-md-12 block_body">
+				<ul id="list_anuncios">
+					<li><a href="#">[UC1] Announcement 1</a> <span class="date">Data 1</span></li>
+					<li><a href="#">[UC2] Announcement 2</a> <span class="date">Data 2</span></li>
+					<li><a href="#">[UC3] Announcement 3</a> <span class="date">Data 3</span></li>
+					<li><a href="#">[UCN] Announcement N</a> <span class="date">Data N</span></li>
+				</ul>
+			</div> <!-- /#block_body -->
+			
+			<!-- #block_footer-->
+			<div class="col-md-12 block_footer">
+				<div class="block_view view_less">
+					<img src="source/img/icons/normal_icons/normal_minus.png" width="10"/>
+					<a href="#">view less</a>
+				</div>
+				<div class="block_view view_more">
+					<img src="source/img/icons/normal_icons/normal_plus.png" width="10"/>
+					<a href="#">view more</a>
+				</div>
+			</div> <!-- #block_footer-->	
+			
+		</div><!-- /#block_anuncios -->
+
+		<!-- #block_discussoes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="col-md-12 block" id="block_discussons">
+		
+				<!-- #block_header -->
+				<div class="col-md-12 block_header">
+					<div class="table_30">				
+						<!-- .block_icon -->
+						<div class="table_cell block_icon">
+							<img src="source/img/icons/light_icons/light_discussion.png" width="20"/>
+						</div>					
+						<!-- .block_title -->
+						<div class="table_cell block_title">
+							<a href="#">Discussions</a>
+						</div>					
+					</div>
+				</div> <!-- /#block_header -->	
+				
+				<!-- #block_body -->
+				<div class="col-md-12 block_body">
+					<ul id="list_discussions">
+						<li><a href="#">[UC1 - TP1] Discussion 1</a> <span class="date">Data 1</span></li>
+						<li><a href="#">[UC2 - TP2] Discussion 2</a> <span class="date">Data 2</span></li>
+						<li><a href="#">[UC3 - TP3] Discussion 3</a> <span class="date">Data 3</span></li>
+						<li><a href="#">[UCN - TPN] Discussion N</a> <span class="date">Data N</span></li>
+					</ul>
+				</div> <!-- /#block_body -->
+			
+			<!-- #block_footer-->
+			<div class="col-md-12 block_footer">
+				<div class="block_view view_less">
+					<img src="source/img/icons/normal_icons/normal_minus.png" width="10"/>
+					<a href="#">view less</a>
+				</div>
+				<div class="block_view view_more">
+					<img src="source/img/icons/normal_icons/normal_plus.png" width="10"/>
+					<a href="#">view more</a>
+				</div>
+			</div> <!-- #block_footer-->	
+			
+		</div><!-- /#block_discussoes -->
+		
+		<!-- #block_courses ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="col-md-12 block" id="block_courses">
+		
+			<!-- #block_header -->
+			<div class="col-md-12 block_header">
+				<div class="table_30">				
+					<!-- .block_icon -->
+					<div class="table_cell block_icon">
+						<img src="source/img/icons/light_icons/light_course.png" width="20"/>
+					</div>					
+					<!-- .block_title -->
+					<div class="table_cell block_title">
+						<a href="#">Courses</a>
+					</div>					
+				</div>
+			</div> <!-- /#block_header -->	
+				
+			<!-- #block_body -->
+			<div class="col-md-12 block_body">
+				<ul id="courses">
+					<li><a href="#">Sigla da UC1 - Nome da UC1</a> <span class="course">Curso1</span></li>
+					<li><a href="#">Sigla da UC2 - Nome da UC2</a> <span class="course">Curso2</span></li>
+					<li><a href="#">Sigla da UC3 - Nome da UC3</a> <span class="course">Curso3</span></li>
+					<li><a href="#">Sigla da UCN - Nome da UCN</a> <span class="course">Curso4</span></li>
+				</ul>
+			</div> <!-- /#block_body -->
+				
+			<!-- #block_footer-->
+			<div class="col-md-12 block_footer">
+				<div class="block_view view_less">
+					<img src="source/img/icons/normal_icons/normal_minus.png" width="10"/>
+					<a href="#">view less</a>
+				</div>
+				<div class="block_view view_more">
+					<img src="source/img/icons/normal_icons/normal_plus.png" width="10"/>
+					<a href="#">view more</a>
+				</div>
+			</div> <!-- #block_footer-->				
+			
+		</div><!-- /#block_courses -->
+		
+	</div> <!-- /Right Side -->
+					
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+					</div> <!-- /#container -->
+				</div> <!-- /#page-wrapper -->
+			</div> <!-- /#content -->
+			
+			<!-- #footer -->
+			<div class="navbar navbar-fixed-bottom" id="footer" >
+				<div class="container">
+					© 2013/2014 Universidade do Minho, Mestrado em Engenharia de Linguagens
+				</div>
+			</div><!-- /#footer -->
+
+		</div><!-- /#main -->
+
+<!-- JAVASCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!-- JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="source/js/bootstrap.min.js"></script>
+		
+	<!-- Personal JavaScript -->
+	<script src="source/js/javascript.js"></script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	</body>
+</html>
+

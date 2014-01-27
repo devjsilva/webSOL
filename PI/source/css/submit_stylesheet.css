@@ -1,0 +1,109 @@
+
+#page-wrapper{
+	margin-top:20px;
+}
+
+/* SUBMIT CONTAINER ------------------------------------------------------------------------------- */
+
+#submit_container{
+    color:#999999;
+    margin-left:20px;
+    margin-right:20px;
+    overflow:auto;
+    margin-bottom:30px;
+}
+#submit_container h1{
+	color:#333333;
+	font-size:28px;	
+}
+#submit_container h2{
+    margin-top:0;
+	color:#333333;
+	font-size:18px;
+}
+#submit_container a,
+#submit_container a:visited{
+	color:#0ca4f0;
+	text-decoration:underline;
+}
+#submit_container label{
+	font-weight:normal;
+}
+
+#submit_container .sub_h2{
+	font-size:14px;
+}
+
+#submit_container img{
+    margin-top: -5px;
+}
+
+.text_area_block{
+    padding:0;
+    margin:0;
+    margin-bottom:20px;
+}
+
+.text_area_block ul{
+    list-style:none;
+    padding-left:10px;
+    margin:0;
+    margin-bottom:5px;
+}
+.text_area_block li{
+    padding:4px 5px 3px 5px;   
+    display: inline;
+}
+.text_area_block li:hover{
+    background-color:#E7E7E7;
+}
+
+.text_area_block textarea{
+    border-radius:0px; 
+    resize: none;
+}
+
+
+#error_log{
+    margin:30px 0px;
+    font-size:16px;
+    color:red;
+}
+
+#submit_container label{
+    font-weight: normal;
+    font-size: 14px;
+    color : #333;
+}
+
+#submit{
+    float:right;
+}
+
+/* DATE LOG --------------------------------------------------------------------------------------------------------- */
+
+#date_log{
+    padding:0;
+    margin:0;
+
+    padding-top:20px;
+}
+
+#date_log h3{
+    color:#333;
+}
+
+#date_log #submission_date,
+#date_log #penalization_date{
+    color:#39B039;
+}
+#date_log #remaining_days,
+#date_log #penalization_days{
+    font-weight:bold;
+    color:#0ca4f0;
+}
+#date_log #penalization_value{
+    font-weight:bold;
+    color:#E93535;
+}        
+   
