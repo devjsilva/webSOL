@@ -8,7 +8,7 @@ $(function() {
 	});
 
 	// Backstretchs
-	$("#body").backstretch("images/3.jpg"); 
+	$("#header").backstretch("images/3.jpg"); 
 	//$("#services").backstretch("images/3.jpg");
 	
 	// Countdown
