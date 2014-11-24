@@ -1105,3 +1105,10 @@ form .form-control:focus {
 .pre-loader {
   background: #6b396c;
 }
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.modal-header .omb_authTitle {
+    text-align: center;
+    line-height: 300%;
+}
+
