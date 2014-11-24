@@ -1112,3 +1112,27 @@ form .form-control:focus {
     line-height: 300%;
 }
 
+.omb_authTitle a:link{
+    color: #9d5387;
+}
+
+/* visited link */
+.omb_authTitle a:visited {
+    color: #9d5387;
+}
+
+/* mouse over link */
+.omb_authTitle a:hover {
+    color: #9d5387;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+/* selected link */
+.omb_authTitle a:active {
+    color: #9d5387;
+}
+
+.modal-dialog {
+  margin-top: 15%;
+}
+
