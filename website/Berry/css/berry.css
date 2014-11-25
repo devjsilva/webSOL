@@ -1192,8 +1192,3 @@ form .form-control:focus {
 .omb_login{
   margin-bottom: 3%;
 }
-
-.modal-sm .modal-body {
-    max-height: 420px;
-    overflow-y: auto;
-}
