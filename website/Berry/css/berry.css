@@ -1186,5 +1186,9 @@ form .form-control:focus {
 }
 
 .modal-lg{
-  margin-top: 12.5%;
+  margin-top: 12.5%; 
+}
+
+.omb_login{
+  margin-bottom: 3%;
 }
