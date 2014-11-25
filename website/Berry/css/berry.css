@@ -1184,3 +1184,7 @@ form .form-control:focus {
 .btnLogin{
   margin-top: 2%;
 }
+
+.modal-lg{
+  margin-top: 12.5%;
+}
