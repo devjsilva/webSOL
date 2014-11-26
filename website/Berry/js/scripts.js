@@ -160,3 +160,11 @@ $(document).ready(function() {
     appMaster.placeHold();
 
 });
+
+$('.omb_btn-facebook').click(function(){
+    //alert("button has been");
+    FB.login(function(response) {
+       // handle the response
+       console.log(response);
+     }, {scope: 'public_profile,email'});
+});
