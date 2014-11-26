@@ -160,9 +160,3 @@ $(document).ready(function() {
     appMaster.placeHold();
 
 });
-
-
-
-}
-
-
