@@ -165,14 +165,22 @@ $('.omb_btn-facebook').click(function(){
     //alert("button has been");
     FB.login(function(response) {
        // handle the response
-       FB.api('/me', function(response) {
-            alert("First Name: "+response.first_name + "\n"
-                  +"Last Name: "+ response.last_name + "\n"
-                  +"Gender: "+response.gender + "\n"
-                  +"Email: "+response.email+ "\n"
-                  +"Facebook page: "+response.link);
-            //console.log(JSON.stringify(response));
-        });
+       if (response.status === 'connected') {
+         // Logged into your app and Facebook.
+            FB.api('/me', function(response) {
+                alert("First Name: "+response.first_name + "\n"
+                      +"Last Name: "+ response.last_name + "\n"
+                      +"Gender: "+response.gender + "\n"
+                      +"Email: "+response.email+ "\n"
+                      +"Facebook page: "+response.link);
+                //console.log(JSON.stringify(response));
+            });
+       } else if (response.status === 'not_authorized') {
+         // The person is logged into Facebook, but not your app.
+       } else {
+         // The person is not logged into Facebook, so we're not sure if
+         // they are logged into this app or not.
+       }
        //console.log(response);
      }, {scope: 'public_profile,email'});
 });
