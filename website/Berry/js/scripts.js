@@ -190,6 +190,7 @@ $('.omb_btn-facebook').click(function(){
      }, {scope: 'public_profile,email'});
 });
 
+/*TWITTER LOGIN BUTTON*/
 $('.omb_btn-twitter').on('click', function(){
 
     $.ajax({
@@ -200,4 +201,4 @@ $('.omb_btn-twitter').on('click', function(){
             console.log(data);
        }
     });
-)};
+});
