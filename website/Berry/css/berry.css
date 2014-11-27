@@ -1011,19 +1011,19 @@ form .form-control:focus {
     display: none;
   }
   header .navbar-default ul.navbar-nav li a:hover {
-    color: #cc6698;
+    color: #f4ac00;
   }
   header .navbar-default .navbar-collapse {
     background: #6b396c;
   }
   header .navbar-default.scrolled {
-    background: #6b396c;
+    background: #f4ac00;
   }
   header .navbar-default.scrolled ul.navbar-nav li a {
     color: #ffffff;
   }
   header .navbar-default.scrolled ul.navbar-nav li a:hover {
-    color: #cc6698;
+    color: #ffd754;
   }
 }
 
