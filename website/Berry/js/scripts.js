@@ -189,3 +189,15 @@ $('.omb_btn-facebook').click(function(){
        //console.log(response);
      }, {scope: 'public_profile,email'});
 });
+
+$('.omb_btn-twitter').on('click', function(){
+
+    $.ajax({
+       url: './twitter/twitter.php',
+       dataType: 'json',
+       success: function(data){
+            //data returned from php
+            console.log(data);
+       }
+    });
+)};

@@ -36,11 +36,4 @@ echo $twitter->setGetfield($getfield)
              ->buildOauth($url, $requestMethod)
              ->performRequest();
 
-function runMyFunction() {
-    echo 'I just ran a php function';
-  }
-
-  if (isset($_GET['hello'])) {
-    runMyFunction();
-  }	
 ?> 
