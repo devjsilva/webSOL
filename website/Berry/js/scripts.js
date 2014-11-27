@@ -161,6 +161,7 @@ $(document).ready(function() {
 
 });
 
+/*FACEBOOK LOGIN BUTTON*/
 $('.omb_btn-facebook').click(function(){
     //alert("button has been");
     FB.login(function(response) {
