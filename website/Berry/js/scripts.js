@@ -175,6 +175,9 @@ $('.omb_btn-facebook').click(function(){
                       +"Facebook page: "+response.link);
                 //console.log(JSON.stringify(response));
             });
+             FB.logout(function(response) {
+                // Person is now logged out
+            });
        } else if (response.status === 'not_authorized') {
          // The person is logged into Facebook, but not your app.
        } else {
