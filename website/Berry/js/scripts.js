@@ -166,7 +166,11 @@ $('.omb_btn-facebook').click(function(){
     FB.login(function(response) {
        // handle the response
        FB.api('/me', function(response) {
-            alert(response.name);
+            alert("First Name: "+response.first_name + "\n"
+                  +"Last Name: "+ response.last_name + "\n"
+                  +"Gender: "+response.gender + "\n"
+                  +"Email: "+response.email+ "\n"
+                  +"Facebook page: "+response.link);
             console.log(JSON.stringify(response));
         });
        //console.log(response);
