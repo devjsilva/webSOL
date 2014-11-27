@@ -165,6 +165,9 @@ $('.omb_btn-facebook').click(function(){
     //alert("button has been");
     FB.login(function(response) {
        // handle the response
-       console.log(response);
+       FB.api('/me', function(response) {
+            alert(response.name);
+        });
+       //console.log(response);
      }, {scope: 'public_profile,email'});
 });
