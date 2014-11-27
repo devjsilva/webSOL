@@ -171,7 +171,7 @@ $('.omb_btn-facebook').click(function(){
                   +"Gender: "+response.gender + "\n"
                   +"Email: "+response.email+ "\n"
                   +"Facebook page: "+response.link);
-            console.log(JSON.stringify(response));
+            //console.log(JSON.stringify(response));
         });
        //console.log(response);
      }, {scope: 'public_profile,email'});
