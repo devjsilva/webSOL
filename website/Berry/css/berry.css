@@ -686,30 +686,21 @@ form textarea.form-control {
     border-radius: 5em;
   }
 }
-header {
-  background: #cc6698;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #cc6698 0%, #6b396c 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #cc6698), color-stop(100%, #6b396c));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #cc6698 0%, #6b396c 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #cc6698 0%, #6b396c 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #cc6698 0%, #6b396c 100%);
-  /* IE10+ */
-  background: linear-gradient(-45deg, #cc6698 0%, #6b396c 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc6698, endColorstr=#6b396c, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
+header {background: rgb(244,183,0); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(244,183,0,1) 0%, rgba(255,215,84,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(244,183,0,1)), color-stop(100%,rgba(255,215,84,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(244,183,0,1) 0%,rgba(255,215,84,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(244,183,0,1) 0%,rgba(255,215,84,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(244,183,0,1) 0%,rgba(255,215,84,1) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(244,183,0,1) 0%,rgba(255,215,84,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4b700', endColorstr='#ffd754',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 header .navbar-default ul.navbar-nav li a {
   color: #ffffff;
   background: none;
 }
 header .navbar-default ul.navbar-nav li a.getApp {
-  color: #824583;
+  color: #f4b700;
   background: #ffffff;
   /* Old browsers */
   background: -moz-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
@@ -724,11 +715,11 @@ header .navbar-default ul.navbar-nav li a.getApp {
   /* IE10+ */
   background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#e0e0e0, GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f4bf00, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 header .navbar-default ul.navbar-nav li a.getApp:hover {
-  color: #8c4b8d;
+  color: #f4bf07;
   background: #ffffff;
   /* Old browsers */
   background: -moz-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
@@ -760,60 +751,60 @@ header .navbar-default ul.navbar-nav li a:hover {
   transition: all 0.25s ease-in-out;
 }
 header .navbar-default.scrolled {
-  border-bottom: 3px solid #6b396c;
+  border-bottom: 3px solid #f4ac00;
 }
 header .navbar-default.scrolled ul.navbar-nav li a {
-  color: #6b396c;
+  color: #f4ac00;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover {
-  color: #6b396c;
+  color: #f4ac00;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
-  background: #6b396c;
+  background: #f4ac00;
 }
 header .navbar-default.scrolled .navbar-brand {
-  background: #6b396c;
+  background: #f4ac00;
 }
 section .section-heading .divider:after {
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#about .about-item i.fa {
-  border: 2px solid #cc6698;
-  color: #cc6698;
+  border: 2px solid #f4bf00;
+  color: #f4bf00;
 }
 section#about .about-item:hover i.fa {
   color: #ffffff;
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#about .about-item:hover h3 {
-  color: #cc6698;
+  color: #f4bf00;
 }
 section#features {
   background: #f6f6f6;
 }
 section#features header h1:after {
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#features .media i.fa {
-  border: 2px solid #cc6698;
-  color: #cc6698;
+  border: 2px solid #f4bf00;
+  color: #f4bf00;
 }
 section#features .media:hover i.fa {
   color: #ffffff;
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#features .media:hover h3 {
-  color: #cc6698;
+  color: #f4bf00;
 }
 section#features .media.active i.fa {
   color: #ffffff;
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#features .media.active .media-heading {
-  color: #cc6698;
+  color: #f4bf00;
 }
 section#reviews {
-  background: url("../img/berry/bk-berry.jpg");
+  background: url("../img/berry/bk-sample.jpg");
 }
 section#reviews header {
   color: #ffffff;
@@ -828,10 +819,10 @@ section#reviews .review-filtering .review .review-comment {
   background: #ffffff;
 }
 section#reviews .review-filtering .review .review-comment h3 {
-  color: #cc6698;
+  color: #f4bf00;
 }
 section#reviews .review-filtering .review .review-comment p span i {
-  color: #cc6698;
+  color: #f4bf00;
 }
 section#reviews .review-filtering .review .review-comment:after {
   border-right-color: #ffffff;
@@ -841,10 +832,10 @@ section#reviews .review-filtering .slick-dots li button {
   border: 2px solid #ffffff;
 }
 section#reviews .review-filtering .slick-dots li.slick-active button {
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#screens header h1:after {
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#screens .slider div img {
   border: 2px solid #e5e5e5;
@@ -864,24 +855,24 @@ section#screens .filter a {
 }
 section#screens .filter a:hover {
   color: #ffffff;
-  background: #cc6698;
-  border-color: #cc6698;
+  background: #f4bf00;
+  border-color: #f4bf00;
 }
 section#screens .filter a.active {
   color: #ffffff;
-  background: #cc6698;
-  border-color: #cc6698;
+  background: #f4bf00;
+  border-color: #f4bf00;
 }
 /* demo video Section */
 section#demo {
   background: #f6f6f6;
 }
 section#demo header h1:after {
-  background: #cc6698;
+  background: #f4bf00;
 }
 /* Get app Section */
 section#getApp {
-  background: url("../img/berry/bk-berry-ga.jpg");
+  background: url("../img/berry/bk-yello-ga.jpg");
 }
 section#getApp header {
   color: #ffffff;
@@ -904,25 +895,25 @@ section#getApp .platforms .media:hover {
 }
 section#getApp .platforms .media:hover a i,
 section#getApp .platforms .media:hover a div.media-body {
-  color: #cc6698;
+  color: #f4bf00;
 }
 /* support section */
 section#support header h1:after {
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#support .media i.fa {
-  border: 2px solid #cc6698;
-  color: #cc6698;
+  border: 2px solid #f4bf00;
+  color: #f4bf00;
 }
 section#support .media a {
-  color: #cc6698;
+  color: #f4bf00;
 }
 section#support .media:hover i.fa {
   color: #ffffff;
-  background: #cc6698;
+  background: #f4bf00;
 }
 section#support .media:hover h3 {
-  color: #cc6698;
+  color: #f4bf00;
 }
 /* footer section */
 footer{
@@ -946,7 +937,7 @@ footer .social a:hover {
   background: #ffffff;
 }
 footer .social a:hover i {
-  color: #cc6698;
+  color: #f4bf00;
 }
 footer .rights {
   color: #ffffff;
@@ -961,13 +952,13 @@ footer .rights a {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 .btn.btn-primary {
-  color: #cc6698;
-  border-color: #cc6698;
+  color: #f4bf00;
+  border-color: #f4bf00;
 }
 .btn.btn-primary:hover {
   color: #ffffff;
-  background: #cc6698;
-  border-color: #cc6698;
+  background: #f4bf00;
+  border-color: #f4bf00;
 }
 .btn.btn-primary.inverse {
   color: #ffffff;
@@ -975,8 +966,8 @@ footer .rights a {
 }
 .btn.btn-primary.inverse:hover {
   color: #ffffff;
-  background: #cc6698;
-  border-color: #cc6698;
+  background: #ffd754;
+  border-color: #ffd754;
 }
 .btn.btn-default {
   background: #ffffff;
@@ -995,10 +986,10 @@ footer .rights a {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
-  color: #6b396c;
+  color: #f4bf00;
 }
 .btn.btn-default:hover {
-  color: #6b396c;
+  color: #f4bf00;
 }
 form .form-control:focus {
   border-color: #cc6698;
@@ -1110,14 +1101,14 @@ form .form-control:focus {
     text-align: center;
     line-height: 300%;
 }
-  
+
 .omb_login .omb_socialButtons a {
-  color: white; // In yourUse @body-bg 
+  color: white; // In yourUse @body-bg
   opacity:0.9;
 }
 .omb_login .omb_socialButtons a:hover {
     color: white;
-  opacity:1;      
+  opacity:1;
 }
 .omb_login .omb_socialButtons .omb_btn-facebook {
     background: #3b5998;
@@ -1157,7 +1148,7 @@ form .form-control:focus {
   background-color: white;
   width: 3em;
   text-align: center;
-}     
+}
 
 .omb_login .omb_loginForm .input-group.i {
   width: 2em;
@@ -1166,12 +1157,12 @@ form .form-control:focus {
     color: red;
 }
 
-  
+
 @media (min-width: 768px) {
     .omb_login .omb_forgotPwd {
         text-align: right;
         margin-top:10px;
-  }   
+  }
 }
 
 .btnLogin{
@@ -1179,7 +1170,7 @@ form .form-control:focus {
 }
 
 .modal-lg{
-  margin-top: 12.5%; 
+  margin-top: 12.5%;
 }
 
 .omb_login{
