@@ -1172,21 +1172,24 @@ form .form-control:focus {
 
 .col-mda-3, .col-sma-3, .col-xsa-6{
 position: relative;
-min-height: 410px;
+float: left;
+min-height: 1px;
 padding-left: 15px;
 padding-right: 15px;
 }
 .col-xsa-6{
-  float: left;
+  min-height: 410px;
   width: 50%;
 }
+
+@media (min-width: 768px) {
 .col-sma-3{
-  float: left;
-  min-height:1px;
   width: 25%;
 }
+}
+}
+@media (min-width: 992px) {
 .col-mda-3{
-  float: left;
-  min-height:1px;
   width: 25%;
+}
 }
