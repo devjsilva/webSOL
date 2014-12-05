@@ -1188,6 +1188,6 @@ padding-right: 15px;
   width: 25%;
 }
 }
-.tp-banner-container{
-  overflow-y:hidden;
+.tp-banner, .revslider-initialised, .tp-simpleresponsive, .hovered{
+  pointer-events: none
 }
