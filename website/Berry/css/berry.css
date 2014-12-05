@@ -1168,3 +1168,8 @@ form .form-control:focus {
 .omb_login{
   margin-bottom: 3%;
 }
+.col-another-6{
+  float: left;
+  min-height: 410px;
+  width: 50%;
+}
