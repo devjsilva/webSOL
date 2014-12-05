@@ -1189,5 +1189,5 @@ padding-right: 15px;
 }
 }
 .tp-banner-container{
-  overflow-y:scroll;
+  overflow-y:hidden;
 }
