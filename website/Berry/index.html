@@ -13,494 +13,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="shortcut icon" href="favicon.png">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="js/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href=" ../css/bootstrap.css">
 
-    <link rel="stylesheet" href="css/berry.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../js/rs-plugin/css/settings.css">
 
-
-<!-- Test -->
+    <link rel="stylesheet" href="../css/berry.css">
 
 
-
-
-
-<!--    <script type="text/javascript" src="js/modernizr.custom.32033.js"></script> -->
+    <script type="text/javascript" src="../js/modernizr.custom.32033.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+   <script>
+
+            /*
+            Browser Language Redirect script- By JavaScript Kit
+            For this and over 400+ free scripts, visit http://www.javascriptkit.com
+            This notice must stay intact
+            */
+
+            //Enter ISO 639-2 letter Language codes to detect (see: http://www.w3.org/WAI/ER/IG/ert/iso639.htm):
+            var langcodes=new Array("en", "fr", "es", "ja", "zh", "default")
+
+            //Enter corresponding redirect URLs (last one is for default URL):
+            var langredirects=new Array("en/index.html", "en/index.html", "en/index.html", "en/index.html", "en/index.html", "pt/index.html")
+
+            var languageinfo=navigator.language? navigator.language : navigator.userLanguage
+            var gotodefault=1
+
+            function redirectpage(dest){
+            if (window.location.replace)
+            window.location.replace(dest)
+            else
+            window.location=dest
+            }
+
+            for (i=0;i<langcodes.length-1;i++){
+            if (languageinfo.substr(0,2)==langcodes[i]){
+            redirectpage(langredirects[i])
+            gotodefault=0
+            break
+            }
+            }
+
+            if (gotodefault)
+            redirectpage(langredirects[langcodes.length-1])
+
+
+            </script>
 </head>
 
 <body>
-    <!-- Start Facebook SDK-->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '420574498095778',
-          xfbml      : true,
-          version    : 'v2.2'
-        });
-      };
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!--End Facebook SDK -->
-
-      <div class="pre-loader">
-        <div class="load-con">
-            <img src="img/berry/logo.png" class="animated fadeInDown" alt="">
-            <div class="spinner">
-              <div class="bounce1"></div>
-              <div class="bounce2"></div>
-              <div class="bounce3"></div>
-            </div>
-        </div>
-    </div>
-
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="fa fa-bars fa-lg"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <img src="img/berry/logo.png" alt="" class="logo">
-                        </a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#about">Sobre</a>
-                            </li>
-                            <li><a href="#features">Features</a>
-                            </li>
-                            <li>
-                                <a href="#" data-toggle="modal" data-target="#bannerformmodal">Log In</a>
-
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-->
-        </nav>
-
-
-        <!--RevSlider-->
-        <div class="tp-banner-container">
-            <div class="tp-banner" >
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
-                        <!-- MAIN IMAGE -->
-                        <img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption lfl fadeout hidden-xs"
-                            data-x="left"
-                            data-y="bottom"
-                            data-hoffset="30"
-                            data-voffset="0"
-                            data-speed="500"
-                            data-start="700"
-                            data-easing="Power4.easeOut">
-                            <img src="img/berry/Slides/hand-berry.png" alt="">
-                        </div>
-
-                        <div class="tp-caption lfl fadeout visible-xs"
-                            data-x="left"
-                            data-y="center"
-                            data-hoffset="700"
-                            data-voffset="0"
-                            data-speed="500"
-                            data-start="700"
-                            data-easing="Power4.easeOut">
-                            <img src="img/berry/iphone-berry.png" alt="">
-                        </div>
-
-                        <div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
-                          SoL
-                        </div>
-                        <div class="tp-caption large_white_light sfr" data-x="650" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1400" data-easing="Power4.easeOut">
-                          - Use a tecnologia
-                        </div>
-                        <div class="tp-caption large_white_light sfb" data-x="550" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
-                          com cabeça!
-                        </div>
-
-                    </li>
-                    <!-- SLIDE 2 -->
-                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
-                        <!-- MAIN IMAGE -->
-                        <img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption lfb fadeout hidden-xs"
-                            data-x="center"
-                            data-y="bottom"
-                            data-hoffset="0"
-                            data-voffset="0"
-                            data-speed="1000"
-                            data-start="700"
-                            data-easing="Power4.easeOut">
-                            <img src="img/berry/Slides/berry-slide2.png" alt="">
-                        </div>
-
-
-                        <div class="tp-caption large_white_light sft" data-x="center" data-y="250" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
-                         SoL- Saving our Legacy    <i class="fa fa-heart"></i>
-                        </div>
-
-
-                    </li>
-
-                    <!-- SLIDE 3 -->
-                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
-                        <!-- MAIN IMAGE -->
-                        <img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption customin customout hidden-xs"
-                            data-x="right"
-                            data-y="center"
-                            data-hoffset="0"
-                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
-                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                            data-voffset="50"
-                            data-speed="1000"
-                            data-start="700"
-                            data-easing="Power4.easeOut">
-                            <img src="img/berry/Slides/family-berry2.png" alt="">
-                        </div>
-
-                        <div class="tp-caption customin customout visible-xs"
-                            data-x="center"
-                            data-y="center"
-                            data-hoffset="0"
-                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
-                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                            data-voffset="0"
-                            data-speed="1000"
-                            data-start="700"
-                            data-easing="Power4.easeOut">
-                            <img src="img/berry/Slides/family-berry2.png" alt="">
-                        </div>
-
-
-
-
-                        <div class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="-50" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
-                           SoL
-                        </div>
-                        <div class="tp-caption mediumlarge_light_white sft hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
-
-                        </div>
-                        <div class="tp-caption small_light_white sfb hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="80" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
-                           <p>A tecnologia é essencial para a sociedade, <br> no entanto, é necessário perceber que os excessos são prejudiciais. <br>Ensinamos a adotar comportamentos saudaveis e permitimos que passe esse <br>conhecimento aos seus filhos.</p>
-                        </div>
-
-
-
-
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
-
-    </header>
-
-    <!--Start of Login/Sign up modal -->
-    <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal" data-backdrop="false">
-        <div class="modal-dialog modal-sm modal-lg">
-            <div class="modal-content">
-                <div class="modal-content">
-                       <!-- <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
-                        </div> -->
-                        <div class="modal-body">
-                            <div class="control-group">
-                                <div class="controls">
-                                        <div class="omb_login">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
-                                            <div class="row omb_row-sm-offset-3 omb_socialButtons">
-                                                <div class="col-xs-4 col-sm-2">
-                                                    <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
-                                                        <i class="fa fa-facebook visible-xs"></i>
-                                                        <span class="hidden-xs">Facebook</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-4 col-sm-2">
-                                                    <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
-                                                        <i class="fa fa-twitter visible-xs"></i>
-                                                        <span class="hidden-xs">Twitter</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-4 col-sm-2">
-                                                    <a href="#" class="btn btn-lg btn-block omb_btn-google">
-                                                        <i class="fa fa-google-plus visible-xs"></i>
-                                                        <span class="hidden-xs">Google+</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="row omb_row-sm-offset-3 omb_loginOr">
-                                                <div class="col-xs-12 col-sm-6">
-                                                    <hr class="omb_hrOr">
-                                                    <span class="omb_spanOr">or</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="row omb_row-sm-offset-3">
-                                                <div class="col-xs-12 col-sm-6">
-                                                    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                            <input type="text" class="form-control" name="username" placeholder="email address">
-                                                        </div>
-                                                        <span class="help-block"></span>
-
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                            <input  type="password" class="form-control" name="password" placeholder="password">
-                                                        </div>
-                                                        <!-- <span class="help-block">Password error</span> -->
-
-                                                        <button class="btn btn-lg btn-primary btn-block btnLogin" type="submit">Login</button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row omb_row-sm-offset-3">
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <label class="checkbox">
-                                                        <input type="checkbox" value="remember-me">Remember Me
-                                                    </label>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <p class="omb_forgotPwd">
-                                                        <a href="#">Forgot password?</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                     <!--</div>-->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="modal-footer">
-                            <button type="button" class="btn btn-blue">Submit</button>
-                        </div>  -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Login/Sign up modal -->
-
-    <div class="wrapper">
-        <section id="about">
-            <div class="container">
-
-                <div class="section-heading scrollpoint sp-effect3">
-                    <h1>SoL-Saving our Legacy</h1>
-                    <div class="divider"></div>
-                    <p>Somos SOL, queremos ajudar! </p>
-                </div>
-
-                <div class="row">
-                    <div class="col-mda-3 col-sma-3 col-xsa-6">
-                        <div class="about-item scrollpoint sp-effect2">
-                            <i class="fa fa-shield fa-2x"></i>
-                            <h3>Combater excessos</h3>
-                            <p>A tecnologia é fundamental, contudo, é necessário dotar a sociedade de práticas saudáveis na sua utilização.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-mda-3 col-sma-3 col-xsa-6" >
-                        <div class="about-item scrollpoint sp-effect5">
-                            <i class="fa fa-eye fa-2x"></i>
-                            <h3>Monitorizar</h3>
-                            <p>Visualize informação real acerca da utilização do equipamento. Verifique, se a criança possui comportamentos perigosos. </p>
-                        </div>
-                    </div>
-                    <div class="col-mda-3 col-sma-3 col-xsa-6" >
-                        <div class="about-item scrollpoint sp-effect5">
-                            <i class="fa fa-university fa-2x"></i>
-                            <h3>Ensinar</h3>
-                            <p>Ensine os jovens a utilizar a tecnologia corretamente. Permita-nos ajudar na introdução de hábitos saudáveis. </p>
-                        </div>
-                    </div>
-                    <div class="col-mda-3 col-sma-3 col-xsa-6" >
-                        <div class="about-item scrollpoint sp-effect1">
-                            <i class="fa fa-child fa-2x"></i>
-                            <h3>Sensibilizar</h3>
-                            <p>A tecnologia possui um lado mais negativo, sensibilizamos de moda a combater o mesmo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="features">
-            <div class="container">
-                <div class="section-heading scrollpoint sp-effect3">
-                    <h1>Features</h1>
-                    <div class="divider"></div>
-                    <p>Oferecemos:</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
-                        <div class="media media-left feature">
-                            <a class="pull-right">
-                                <i class="fa fa-cogs fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Gestão do equipamento</h3>
-                                Tempo de utilização limitado.
-                                </div>
-                        </div>
-                        <div class="media media-left feature">
-                            <a class="pull-right">
-                                <i class="fa fa-eye fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Monitorização</h3>
-                                Registo sobre dados de utilização.
-                            </div>
-                        </div>
-                        <div class="media media-left feature">
-                            <a class="pull-right">
-                                <i class="fa fa-cogs fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Configuração Simples</h3>
-                                Configure a aplicação a gosto!
-                            </div>
-                        </div>
-                        <div class="media media-left feature">
-                            <a class="pull-right">
-                                <i class="fa fa-book fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Suporte Pedagógico</h3>
-                               Pedagogia durante longos periodos de utilização .
-                            </div>
-                        </div>
-                        <div class="media media-left feature">
-                            <a class="pull-right">
-                                <i class="fa fa-trophy fa-2x"></i>
-                            </a>
-                             <div class="media-body">
-                                <h3 class="media-heading">Sistema de recompensas</h3>
-                               Recompense  a conclusão de tarefas com mais tempo de utilização!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4" >
-                        <img src="img/berry/iphone-berry.png" class="img-responsive scrollpoint sp-effect5" alt="">
-                    </div>
-                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
-                        <div class="media feature">
-                            <a class="pull-left">
-                                <i class="fa fa-clock-o  fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Intervalos regulares</h3>
-                               Intervalos durante uma longa utilização.
-                            </div>
-                        </div>
-                        <div class="media feature">
-                            <a class="pull-left">
-                                <i class="fa fa-check-square  fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Anti-desinstalação</h3>
-                                Bloqueio da desinstalação da aplicação.
-                            </div>
-                        </div>
-                        <div class="media feature">
-                            <a class="pull-left">
-                                <i class="fa fa-ban fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Restrição de aplicações</h3>
-                                Restrição temporaria de utilização de aplicações com utilização prejudicial.
-                            </div>
-                        </div>
-                        <div class="media feature">
-                            <a class="pull-left">
-                                <i class="fa fa-lock fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Bloqueio inteligente </h3>
-                              O sistema aprende com o seu filho, e bloqueia consoante as necessidades.
-                            </div>
-                        </div>
-                        <div class="media feature">
-                            <a class="pull-left">
-                                <i class="fa fa-users fa-2x"></i>
-                            </a>
-                            <div class="media-body">
-                                <h3 class="media-heading">Gestão de Utilizadores</h3>
-                                Suporte para vários utilizadores no mesmo equipamento.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <footer>
-            <div class="container">
-                <a href="#" class="scrollpoint sp-effect3">
-                    <img src="img/berry/logo.png" alt="" class="logo">
-                </a>
-                <div class="social">
-                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
-                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
-                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
-                </div>
-                <div class="rights">
-                    <p>Copyright &copy; 2014</p>
-                    <p>Template by <a href="http://www.scoopthemes.com" target="_blank">ScoopThemes</a></p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/placeholdem.min.js"></script>
-    <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        $(document).ready(function() {
-            appMaster.preLoader();
-        });
-    </script>
+   <h3>YO</h3>
 </body>
 
 </html>
