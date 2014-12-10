@@ -608,7 +608,7 @@ form textarea.form-control {
   height: auto;
   line-height: normal;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 770px) {
   .logo {
     width: 100px;
     height: auto;
@@ -982,7 +982,7 @@ form .form-control:focus {
   border-color: #cc6698;
   color: #999999;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
   header .navbar-default .navbar-toggle:hover,
   header .navbar-default .navbar-toggle:focus {
     background: none;
