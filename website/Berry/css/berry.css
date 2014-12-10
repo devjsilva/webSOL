@@ -1289,7 +1289,7 @@ box-shadow:0 8px 0 #FFFFFF, 0 16px 0 #FFFFFF;
   position: absolute;
 
   width: 35px;/*270*/
-  border:1px solid #ed4267;
+  /*border:1px solid #ed4267;*/
   list-style: none;
   max-height: 100px;/*170*/
   /* overflow-y: scroll;*/
