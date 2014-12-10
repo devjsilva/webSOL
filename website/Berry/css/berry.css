@@ -798,7 +798,7 @@ section#features .media.active .media-heading {
   color: #f4bf00;
 }
 section#reviews {
-  background: url("../img/berry/bk-sample.jpg");
+  background: url("../img/bk-sample.jpg");
 }
 section#reviews header {
   color: #ffffff;
@@ -866,7 +866,7 @@ section#demo header h1:after {
 }
 /* Get app Section */
 section#getApp {
-  background: url("../img/berry/bk-yello-ga.jpg");
+  background: url("../img/bk-yello-ga.jpg");
 }
 section#getApp header {
   color: #ffffff;
