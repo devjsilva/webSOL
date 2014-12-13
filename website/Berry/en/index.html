@@ -519,18 +519,26 @@
       event.preventDefault();
       var user = $( "input[name='username']" ).val();
       var pwd = $( "input[name='password']" ).val();
-      //alert("data:" +user+ "," +pwd);
+      if(!user.trim()){
+        $( '#help-block' ).empty().text( "Username is empty." ).show().delay(5000).fadeOut();
+        $( '#username' ).focus();
+        $( '#password' ).empty();
+        return;
+      }
+      if(!pwd.trim()){
+        $( '#help-block' ).empty().text( "Password is empty." ).show().delay(5000).fadeOut();
+        $( '#password' ).focus();
+        return;
+      }
       $.post('../php/member_login.php', { username: user, password: pwd },function(data,status){
         if(status=="success")
           if(data=='true'){$( '#help-block' ).text( "You Logged In!" ).show();}
           else{$( '#help-block' ).text( data ).show();}
             ;});
-            //if (boo==true){
-            //}
             return;
           });
 
-    </script>
+      </script>
 </body>
 
 </html>
