@@ -1,10 +1,11 @@
 <?PHP
 require_once("./include/member.php");
 
-$member = new member(/*database name*/'savingou_projlegacy',
-/*hostname*/'www.savingourlegacy.com',
+$member = new member(
+/*database name*/'savingou_projlegacy',/*hostname*/'www.savingourlegacy.com',
 /*username*/'savingou_adminly',
 /*password*/'façoanosemmarço',
+/*database name*/'savingou_projlegacy',
 /*table name*/'Utilizador');
 
 
