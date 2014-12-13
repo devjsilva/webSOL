@@ -99,12 +99,12 @@
                             </li>
                             <li><a href="#features">Features</a>
                             </li>
-                            <!-- Under Construction
+
                             <li>
                                 <a href="#" data-toggle="modal" data-target="#bannerformmodal">Log In</a>
 
                             </li>
-                            -->
+
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -283,7 +283,7 @@
 
                                             <div class="row omb_row-sm-offset-3">
                                                 <div class="col-xs-12 col-sm-6">
-                                                    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+                                                    <form class="omb_loginForm" action="" id='loginform' autocomplete="off" method="POST">
                                                         <div class="input-group">
                                                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
                                                             <input type="text" class="form-control" name="username" placeholder="email address">
@@ -294,7 +294,7 @@
                                                             <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                                                             <input  type="password" class="form-control" name="password" placeholder="password">
                                                         </div>
-                                                        <!-- <span class="help-block">Password error</span> -->
+                                                        <span class="help-block" id="help-block"></span>
 
                                                         <button class="btn btn-lg btn-primary btn-block btnLogin" type="submit">Login</button>
                                                     </form>
@@ -513,6 +513,23 @@
         $(document).ready(function() {
             appMaster.preLoader();
         });
+    </script>
+    <script>
+    $( "#loginform" ).submit(function( event ) {
+      event.preventDefault();
+      var user = $( "input[name='username']" ).val();
+      var pwd = $( "input[name='password']" ).val();
+      //alert("data:" +user+ "," +pwd);
+      $.post('../php/member_login.php', { username: user, password: pwd },function(data,status){
+        if(status=="success")
+          if(data=='true'){$( '#help-block' ).text( "You Logged In!" ).show();}
+          else{$( '#help-block' ).text( data ).show();}
+            ;});
+            //if (boo==true){
+            //}
+            return;
+          });
+
     </script>
 </body>
 

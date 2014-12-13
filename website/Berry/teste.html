@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>submit demo</title>
+  <style>
+  p {
+    margin: 0;
+    color: blue;
+  }
+  div,p {
+    margin-left: 10px;
+  }
+  span {
+    color: red;
+  }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<p>Type 'correct' to validate.</p>
+<form action="" id="tolo" method="post">
+  <div>
+    <input type="text" name="search">
+    <button type="submit">
+  </div>
+</form>
+<span id="hello"></span>
+<span></span>
+
+
+<script>
+$( "#tolo" ).submit(function( event ) {
+  if ( $( "input:first" ).val() === "correct" ) {
+    $( "#hello" ).text( $ ( "input[name='search']").val()  ).show();
+    event.preventDefault();
+    return;
+  }
+
+  $( "#hello" ).text( "input[name='search']" ).show().fadeOut( 1000 );
+  event.preventDefault();
+});
+</script>
+
+</body>
+</html>
