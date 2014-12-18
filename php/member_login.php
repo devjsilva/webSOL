@@ -6,13 +6,17 @@ $member = new member(/*database name*/'savingou_projlegacy',
 /*password*/'façoanosemmarço',
 /*table name*/'Utilizador');
 $member->SetRandomKey('3tXJSkqyYMMaC97');
-if($member->login())
-{
-  echo "true";
-  //header("Location: ../index.html");
-  //exit;
-}
-echo $member->GetError();
+// if($member->login())
+// {
+//   echo "true";
+//   //header("Location: ../index.html");
+//   //exit;
+// }
+// echo $member->GetError();
+
+//tempconnect();
+//$member->register("João","j@savingourlegacy.com","Teste","");
+$member->checkuser("j@savisngourlegacy.com","Teste");
 
 
 
@@ -86,7 +90,7 @@ function HandleError($error){
 
 
 
-
+*/
 
 function tempconnect()
 {
@@ -102,21 +106,27 @@ function tempconnect()
   if ($conn->connect_errno) {
     die("Connection failed!");
   }
-  //$result=$conn->query("SHOW COLUMNS FROM Utilizador");
-  //$conn->query("INSERT INTO Utilizador (username,password,ut_nome,ut_dataNasc,ut_dataReg) VALUES('md5','md5','Teste md5',CURDATE(),CURDATE())");
+  $result=$conn->query("SHOW COLUMNS FROM Utilizador");
+  //$conn->query("INSERT INTO Utilizador (ut_nome,password,ut_nome,ut_dataNasc,ut_dataReg) VALUES('md5','md5','Teste md5',CURDATE(),CURDATE())");
   //$conn->query("UPDATE Utilizador SET password='$md5' WHERE username='md5'");
-  $result=$conn->query("SELECT * FROM Utilizador where username='md5'");
+  //$result=$conn->query("SELECT * FROM Utilizador");
   print_r($result);
   echo "<p>Available tables:</p>\n";
   echo "<pre>\n";
   echo "</pre>\n";
-  //while ($row = $result->fetch_row()) {
-    //printf ("\n%s<br>", $row[0]);
-  //}
-  $row=$result->fetch_array();
-  for($i=0;$i<$result->field_count*2;$i++){
-    printf ("\n%s<br>", $row[$i]);
+  while ($row = $result->fetch_row()) {
+    printf ("\n%s<br>", $row[0]);
   }
+  // $row=$result->fetch_array();
+  // echo $result->result(2);
+  // for($i=0;$i<$result->field_count*2;$i++){
+  //   printf ("\n%s<br>", $row[$i]);
+  // }
+  // echo "<br>";
+  // while($row=$result->fetch_array(MYSQLI_BOTH)){
+  //   echo ":".$row["ut_nome"]."<br>";
+  // }
+  // $result->close();
 
 }
 /*
